@@ -1,0 +1,32 @@
+!!! html
+%html
+  %head{'lang' => 'en'}
+    %meta{'charset' => 'UTF-8'}
+    %title Calculator
+    %link{'href'=>'style.css', 'rel'=>'stylesheet', 'type' => 'text/css'}
+    %script{src: 'https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js'}
+    %script{src: 'calculator.js'}
+    %script{src: 'app.js'}
+    
+  %body
+    .calculator
+      .top
+        %button.clear C
+        .screen
+      .main
+        %button.keys='7'
+        %button.keys='8'
+        %button.keys='9'
+        %button.keys.operator='+'
+        %button.keys='4'
+        %button.keys='5'
+        %button.keys='6'
+        %button.keys.operator='-'
+        %button.keys='1'
+        %button.keys='2'
+        %button.keys='3'
+        %button.keys.operator='*'
+        %button.keys='0'
+        %button.keys='.'
+        %button.keys.equal='='
+        %button.keys.operator='/'
